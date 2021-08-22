@@ -43,9 +43,9 @@ npm install --save unstated-next
 ## Example
 
 ```js
-import React, { useState } from "react"
-import { createContainer } from "unstated-next"
-import { render } from "react-dom"
+import React, { useState } from 'react'
+import { createContainer } from 'unstated-next'
+import { render } from 'react-dom'
 
 function useCounter(initialState = 0) {
   let [count, setCount] = useState(initialState)
@@ -82,7 +82,7 @@ function App() {
   )
 }
 
-render(<App />, document.getElementById("root"))
+render(<App />, document.getElementById('root'))
 ```
 
 ## API
@@ -90,11 +90,11 @@ render(<App />, document.getElementById("root"))
 ### `createContainer(useHook)`
 
 ```js
-import { createContainer } from "unstated-next"
+import { createContainer } from 'unstated-next'
 
 function useCustomHook() {
   let [value, setValue] = useState()
-  let onChange = e => setValue(e.currentTarget.value)
+  let onChange = (e) => setValue(e.currentTarget.value)
   return { value, onChange }
 }
 
@@ -117,14 +117,14 @@ function ParentComponent() {
 ### `<Container.Provider initialState>`
 
 ```js
-function useCustomHook(initialState = "") {
+function useCustomHook(initialState = '') {
   let [value, setValue] = useState(initialState)
   // ...
 }
 
 function ParentComponent() {
   return (
-    <Container.Provider initialState={"value"}>
+    <Container.Provider initialState={'value'}>
       <ChildComponent />
     </Container.Provider>
   )
@@ -143,7 +143,7 @@ function ChildComponent() {
 ### `useContainer(Container)`
 
 ```js
-import { useContainer } from "unstated-next"
+import { useContainer } from 'unstated-next'
 
 function ChildComponent() {
   let input = useContainer(Container)
@@ -239,7 +239,7 @@ But sometimes we all need a little bit more structure and intentional API design
 By introducing the `createContainer()` function, you can think about your custom hooks as "containers" and have an API that's clear and prevents you from using it wrong.
 
 ```js
-import { createContainer } from "unstated-next"
+import { createContainer } from 'unstated-next'
 
 function useCounter() {
   let [count, setCount] = useState(0)
@@ -487,7 +487,7 @@ function useCounter() {
 
 let Counter = createContainer(useCounter)
 
-let CounterDisplayInner = React.memo(props => {
+let CounterDisplayInner = React.memo((props) => {
   return (
     <div>
       <button onClick={props.decrement}>-</button>
@@ -513,10 +513,8 @@ function CounterDisplay(props) {
 function CounterDisplay(props) {
   let counter = Counter.useContainer()
   let count = counter.count
-  
-  return (
-    <p>You clicked {count} times</p>
-  )
+
+  return <p>You clicked {count} times</p>
 }
 ```
 
@@ -526,10 +524,8 @@ function CounterDisplay(props) {
 function CounterDisplay(props) {
   let counter = Counter.useContainer()
   let count = counter.count
-  
-  return useMemo(() => (
-    <p>You clicked {count} times</p>
-  ), [count])
+
+  return useMemo(() => <p>You clicked {count} times</p>, [count])
 }
 ```
 
