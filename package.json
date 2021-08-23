@@ -1,7 +1,7 @@
 {
   "name": "@jvanderen1/unstated-next",
   "version": "1.0.0",
-  "description": "200 bytes to never think about React state management libraries ever again",
+  "description": "Up-to-date version of everyone's favorite state management library unstated-next",
   "sideEffects": false,
   "scripts": {
     "build": "npm run build:prod",
