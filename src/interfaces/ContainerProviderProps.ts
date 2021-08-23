@@ -1,6 +1,19 @@
+// Imports
+// -------
+
+// Types
 import { ReactNode } from 'react'
 
-export interface ContainerProviderProps<State = void> {
+// Internal
+// --------
+
+interface ContainerProviderProps<State = void> {
   initialState?: State
   children: ReactNode
 }
+
+// Exports
+// -------
+
+// Named
+export { ContainerProviderProps }

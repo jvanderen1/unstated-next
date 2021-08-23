@@ -1,7 +1,17 @@
-import { useContext, Context as ContextInterface } from 'react'
+// Imports
+// -------
+
+// Libraries
+import { useContext } from 'react'
+// Interfaces
+import { Context as ContextInterface } from 'react'
+// Symbols
 import { empty } from './symbols'
 
-export function createUseContext<V>({
+// Internal
+// --------
+
+function createUseContext<V>({
   Context,
 }: {
   Context: ContextInterface<V | typeof empty>
@@ -16,3 +26,9 @@ export function createUseContext<V>({
     return value
   }
 }
+
+// Exports
+// -------
+
+// Named
+export { createUseContext }

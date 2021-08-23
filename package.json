@@ -1,27 +1,6 @@
 {
-  "name": "@jvanderen1/unstated-next",
-  "version": "1.0.0",
-  "description": "Up-to-date version of everyone's favorite state management library unstated-next",
-  "sideEffects": false,
-  "scripts": {
-    "build": "npm run build:prod",
-    "build:dev": "webpack --config webpack/webpack.dev.build.ts",
-    "build:prod": "webpack --config webpack/webpack.prod.build.ts",
-    "clean": "npm run clean:dist && npm run clean:types && npm run clean:node-modules",
-    "clean:dist": "rm -rf dist/",
-    "clean:node-modules": "rm -rf node_modules/",
-    "clean:types": "tsc --build --clean",
-    "clean-install": "npm run clean && npm install",
-    "lint": "eslint './'",
-    "lint:fix": "npm run lint -- --fix",
-    "prepare": "husky install",
-    "pretty": "prettier --check './'",
-    "pretty:fix": "prettier --write './'",
-    "types-check": "tsc --skipLibCheck --noEmit",
-    "serve": "webpack serve --config webpack/webpack.dev.serve.ts --open"
-  },
   "author": "<livetoscout@gmail.com>",
-  "license": "MIT",
+  "description": "Up-to-date version of everyone's favorite state management library unstated-next",
   "devDependencies": {
     "@swc/cli": "^0.1.49",
     "@swc/core": "^1.2.80",
@@ -50,7 +29,29 @@
     "webpack-dev-server": "^4.0.0",
     "webpack-merge": "^5.8.0"
   },
+  "license": "MIT",
+  "name": "@jvanderen1/unstated-next",
   "peerDependencies": {
-    "react": ">= 16.8"
-  }
+    "prop-types": ">= 15.5.0",
+    "react": ">= 16.8.0"
+  },
+  "scripts": {
+    "build": "npm run build:prod",
+    "build:dev": "webpack --config webpack/webpack.dev.build.ts",
+    "build:prod": "webpack --config webpack/webpack.prod.build.ts",
+    "clean": "npm run clean:dist && npm run clean:types && npm run clean:node-modules",
+    "clean:dist": "rm -rf dist/",
+    "clean:node-modules": "rm -rf node_modules/",
+    "clean:types": "tsc --build --clean",
+    "clean-install": "npm run clean && npm install",
+    "lint": "eslint './'",
+    "lint:fix": "npm run lint -- --fix",
+    "prepare": "husky install",
+    "pretty": "prettier --check './'",
+    "pretty:fix": "prettier --write './'",
+    "types-check": "tsc --skipLibCheck --noEmit",
+    "serve": "webpack serve --config webpack/webpack.dev.serve.ts --open"
+  },
+  "sideEffects": false,
+  "version": "1.0.0"
 }

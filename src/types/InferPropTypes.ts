@@ -1,7 +1,14 @@
-// https://medium.com/javascript-inside/notes-on-typescript-inferring-react-proptypes-dfb93100523d
+// Imports
+// -------
+
+// Types
 import { InferProps } from 'prop-types'
 
-export type InferPropTypes<
+// Internal
+// --------
+
+// https://medium.com/javascript-inside/notes-on-typescript-inferring-react-proptypes-dfb93100523d
+type InferPropTypes<
   PropTypes,
   DefaultProps = Record<string, never>,
   Props = InferProps<PropTypes>,
@@ -10,3 +17,9 @@ export type InferPropTypes<
     ? Props[Key] | DefaultProps[Key]
     : Props[Key]
 }
+
+// Exports
+// -------
+
+// Named
+export { InferPropTypes }

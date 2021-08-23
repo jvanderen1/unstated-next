@@ -39,7 +39,7 @@ npm install --save @jvanderen1/unstated-next
 ```jsx
 import { useState } from 'react'
 import { render } from 'react-dom'
-import createContainer from '@jvanderen1/unstated-next'
+import { createContainer } from '@jvanderen1/unstated-next'
 
 function useCounter(initialState = 0) {
   let [count, setCount] = useState(initialState)
@@ -93,7 +93,7 @@ npm run serve
 <details><summary><b>Show example</b></summary>
 
 ```jsx
-import createContainer from 'unstated-next'
+import { createContainer } from 'unstated-next'
 
 function useCustomHook() {
   let [value, setValue] = useState()
@@ -245,7 +245,7 @@ But sometimes we all need a little bit more structure and intentional API design
 By introducing the `createContainer()` function, you can think about your custom hooks as "containers" and have an API that's clear and prevents you from using it wrong.
 
 ```jsx
-import createContainer from 'unstated-next'
+import { createContainer } from 'unstated-next'
 
 function useCounter() {
   let [count, setCount] = useState(0)
@@ -281,7 +281,7 @@ Here's the diff of that change:
 
 ```diff
 - import { createContext, useContext } from "react"
-+ import createContainer from "@jvanderen1/unstated-next"
++ import { createContainer } from "@jvanderen1/unstated-next"
 
   function useCounter() {
     ...

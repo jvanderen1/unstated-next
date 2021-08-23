@@ -1,10 +1,20 @@
-import { ComponentType, Context as ContextInterface } from 'react'
+// Imports
+// -------
+
+// Libraries
 import PropTypes from 'prop-types'
-import { ContainerProviderProps, InferPropTypes } from './interfaces'
-import { UseHook } from './types'
+// Interfaces
+import { ContainerProviderProps } from './interfaces'
+// Types
+import { ComponentType, Context as ContextInterface } from 'react'
+import { InferPropTypes, UseHook } from './types'
+// Symbols
 import { empty } from './symbols'
 
-export function createProvider<V, S>({
+// Internal
+// --------
+
+function createProvider<V, S>({
   Context,
   useHook,
 }: {
@@ -33,3 +43,9 @@ export function createProvider<V, S>({
 
   return Provider as ComponentType<ContainerProviderProps<S>>
 }
+
+// Exports
+// -------
+
+// Named
+export { createProvider }

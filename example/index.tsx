@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { render } from 'react-dom'
-import { createContainer } from '../src/createContainer'
+import { createContainer } from '../src'
 
 function useCounter(initialState = 0) {
   const [count, setCount] = useState(initialState)
