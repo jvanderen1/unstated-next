@@ -17,7 +17,6 @@
     "prepare": "husky install",
     "pretty": "prettier --check './'",
     "pretty:fix": "prettier --write './'",
-    "test": "ava",
     "types-check": "tsc --skipLibCheck --noEmit",
     "serve": "webpack serve --config webpack/webpack.dev.serve.ts --open"
   },
@@ -40,7 +39,6 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "html-webpack-plugin": "^5.3.2",
     "husky": "^7.0.1",
-    "jest": "^27.0.6",
     "lint-staged": "^11.1.2",
     "prettier": "^2.3.2",
     "prop-types": "latest",

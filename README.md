@@ -79,6 +79,13 @@ function App() {
 render(<App />, document.getElementById('root'))
 ```
 
+To run an example, download this repo and run the following commands:
+
+```sh
+npm install
+npm run serve
+```
+
 ## API
 
 ### `createContainer(useHook, displayName?)`
