@@ -21,7 +21,7 @@
     "types-check": "tsc --skipLibCheck --noEmit",
     "serve": "webpack serve --config webpack/webpack.dev.serve.ts --open"
   },
-  "author": "Joshua Van Deren",
+  "author": "<livetoscout@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "@swc/cli": "^0.1.49",
