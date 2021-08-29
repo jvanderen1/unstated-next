@@ -26,11 +26,14 @@ function createProvider<V, S>({
     initialState: PropTypes.any,
   }
 
-  // const providerDefaultProps = {
-  //   initialState: undefined,
-  // }
+  const providerDefaultProps = {
+    initialState: undefined,
+  }
 
-  type ProviderProps = InferPropTypes<typeof providerPropTypes>
+  type ProviderProps = InferPropTypes<
+    typeof providerPropTypes,
+    typeof providerDefaultProps
+  >
 
   function Provider({ children, initialState }: ProviderProps) {
     const value = useHook(initialState)
@@ -38,8 +41,7 @@ function createProvider<V, S>({
   }
 
   Provider.propTypes = providerPropTypes
-
-  // Provider.defaultProps = providerDefaultProps
+  Provider.defaultProps = providerDefaultProps
 
   return Provider as ComponentType<ContainerProviderProps<S>>
 }
