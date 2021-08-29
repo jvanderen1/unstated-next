@@ -31,7 +31,7 @@ So you decide.
 ## Install
 
 ```sh
-npm install --save @jvanderen1/unstated-next
+npm install @jvanderen1/unstated-next
 ```
 
 ## Example
