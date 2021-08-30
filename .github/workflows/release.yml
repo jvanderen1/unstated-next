@@ -28,6 +28,7 @@ jobs:
           name: parcel-artifacts
           path: dist/
       - name: Release Package
+        uses: softprops/action-gh-release@master
         with:
           files: |
             dist/unstated-next.cjs.js
