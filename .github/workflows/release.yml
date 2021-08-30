@@ -27,8 +27,3 @@ jobs:
           path: dist/
       - name: Release Package
         uses: softprops/action-gh-release@master
-        with:
-          files: |
-            dist/unstated-next.cjs.js
-            dist/unstated-next.esm.js
-            dist/unstated-next.umd.js
