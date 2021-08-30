@@ -1,5 +1,10 @@
-name: Build and Test
-on: push
+name: Release
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - "v*.*.*"
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -15,24 +20,18 @@ jobs:
         with:
           name: parcel-artifacts
           path: dist/
-  test:
+  release:
     runs-on: ubuntu-latest
     needs: build
     steps:
       - uses: actions/checkout@master
-      - name: Setup Node
-        uses: actions/setup-node@master
-        with:
-          node-version: '16.x'
       - uses: actions/download-artifact@master
         with:
           name: parcel-artifacts
           path: dist/
-      - name: Install Packages
-        run: |
-          npm install
-      - name: Run Tests
-        run: |
-          npm test
-        env:
-          CI: true
+      - name: Release Package
+        with:
+          files: |
+            dist/unstated-next.cjs.js
+            dist/unstated-next.esm.js
+            dist/unstated-next.umd.js
