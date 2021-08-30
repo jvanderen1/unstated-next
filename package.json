@@ -54,12 +54,12 @@
     "parcel": "^2.0.0-beta.3.1",
     "prettier": "^2.3.2",
     "prop-types": "latest",
+    "react": "latest",
     "react-dom": "latest",
     "ts-node": "^10.2.1",
     "typescript": "^4.3.5"
   },
   "peerDependencies": {
-    "prop-types": ">= 15.5.0",
     "react": ">= 16.8.0"
   }
 }
