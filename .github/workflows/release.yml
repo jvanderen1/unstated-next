@@ -11,11 +11,9 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Install Packages
-        run: |
-          npm install
+        run: npm install
       - name: Build with Parcel
-        run: |
-          npm run build
+        run: npm run build
       - uses: actions/upload-artifact@master
         with:
           name: parcel-artifacts
