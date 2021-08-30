@@ -15,10 +15,10 @@ jobs:
           node-version: '16.x'
           registry-url: 'https://npm.pkg.github.com'
       - name: Install Packages
-      - run: npm install
+        run: npm install
       - name: Build with Parcel
-      - run: npm run build
+        run: npm run build
       - name: Publish Package
-      - run: npm publish
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
