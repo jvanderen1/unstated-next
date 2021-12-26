@@ -21,13 +21,14 @@
   "module": "dist/unstated-next.esm.js",
   "source": "src/index.ts",
   "browser": "dist/unstated-next.umd.js",
+  "types": "dist/types.d.ts",
   "scripts": {
     "build": "npm run clean:dist && parcel build",
     "clean": "npm run clean:dist && npm run clean:types && npm run clean:node-modules",
+    "clean-install": "npm run clean && npm install",
     "clean:dist": "rimraf dist/",
     "clean:node-modules": "rimraf node_modules/",
     "clean:types": "tsc --build --clean",
-    "clean-install": "npm run clean && npm install",
     "dev": "parcel example/index.html",
     "lint": "eslint \"**/*.{ts,tsx}\"",
     "lint:fix": "npm run lint -- --fix",
@@ -38,7 +39,8 @@
     "types-check": "tsc --skipLibCheck --noEmit"
   },
   "devDependencies": {
-    "@parcel/transformer-typescript-types": "^2.0.1",
+    "@parcel/packager-ts": "^2.0.0-nightly.954",
+    "@parcel/transformer-typescript-types": "^2.0.0-nightly.954",
     "@swc/cli": "^0.1.55",
     "@swc/core": "^1.2.123",
     "@types/node": "^17.0.5",
