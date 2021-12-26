@@ -5,10 +5,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - name: Install Packages
-        run: npm install
-      - name: Build with Parcel
-        run: npm run build
+      - uses: borales/actions-yarn@v2.3.0
+        with:
+          cmd: install
+      - uses: borales/actions-yarn@v2.3.0
+        with:
+          cmd: build
       - uses: actions/upload-artifact@master
         with:
           name: parcel-artifacts
@@ -26,9 +28,9 @@ jobs:
         with:
           name: parcel-artifacts
           path: dist/
-      - name: Install Packages
-        run: npm install
-      - name: Run Tests
-        run: npm test
-        env:
-          CI: true
+      - uses: borales/actions-yarn@v2.3.0
+        with:
+          cmd: install
+      - uses: borales/actions-yarn@v2.3.0
+        with:
+          cmd: test
