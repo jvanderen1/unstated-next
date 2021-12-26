@@ -1,3 +1,3 @@
-export * from './Container'
-export * from './ContainerOptions'
-export * from './ContainerProviderProps'
+export { Container } from './Container'
+export { ContainerOptions } from './ContainerOptions'
+export { ContainerProviderProps } from './ContainerProviderProps'

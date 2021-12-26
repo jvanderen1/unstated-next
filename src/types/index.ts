@@ -1,2 +1,2 @@
-export * from './InferPropTypes'
-export * from './UseHook'
+export { InferPropTypes } from './InferPropTypes'
+export { UseHook } from './UseHook'
