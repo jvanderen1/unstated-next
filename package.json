@@ -23,7 +23,7 @@
   "browser": "dist/unstated-next.umd.js",
   "types": "dist/types.d.ts",
   "scripts": {
-    "build": "npm run clean:dist && parcel build",
+    "build": "parcel build",
     "clean": "npm run clean:dist && npm run clean:types && npm run clean:node-modules",
     "clean-install": "npm run clean && npm install",
     "clean:dist": "rimraf dist/",
