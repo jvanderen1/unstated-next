@@ -15,22 +15,23 @@ jobs:
         with:
           name: parcel-artifacts
           path: dist/
-  test:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - uses: actions/checkout@master
-      - name: Setup Node
-        uses: actions/setup-node@master
-        with:
-          node-version: '16.x'
-      - uses: actions/download-artifact@master
-        with:
-          name: parcel-artifacts
-          path: dist/
-      - uses: borales/actions-yarn@v2.3.0
-        with:
-          cmd: install
-      - uses: borales/actions-yarn@v2.3.0
-        with:
-          cmd: test
+# TODO: Add once tests are written
+#  test:
+#    runs-on: ubuntu-latest
+#    needs: build
+#    steps:
+#      - uses: actions/checkout@master
+#      - name: Setup Node
+#        uses: actions/setup-node@master
+#        with:
+#          node-version: '16.x'
+#      - uses: actions/download-artifact@master
+#        with:
+#          name: parcel-artifacts
+#          path: dist/
+#      - uses: borales/actions-yarn@v2.3.0
+#        with:
+#          cmd: install
+#      - uses: borales/actions-yarn@v2.3.0
+#        with:
+#          cmd: test
