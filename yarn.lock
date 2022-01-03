@@ -333,6 +333,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@jvanderen1/unstated-next@workspace:."
   dependencies:
+    "@parcel/core": nightly
     "@parcel/packager-ts": nightly
     "@parcel/transformer-typescript-types": nightly
     "@swc/cli": ^0.1.55
@@ -536,7 +537,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@parcel/core@npm:2.0.0-nightly.961+69566000":
+"@parcel/core@npm:2.0.0-nightly.961+69566000, @parcel/core@npm:nightly":
   version: 2.0.0-nightly.961
   resolution: "@parcel/core@npm:2.0.0-nightly.961"
   dependencies:

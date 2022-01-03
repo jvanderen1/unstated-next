@@ -35,6 +35,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
+            ["@parcel/core", "npm:2.0.0-nightly.961"],
             ["@parcel/packager-ts", "npm:2.0.0-nightly.963"],
             ["@parcel/transformer-typescript-types", "virtual:425a3b9bf55fe09f5cb87920eac8dbe977a178e838ed97831620d1b50671b58e73ba1dac5ce9f79cb038c4346b57283d8ab29fa5ef18688f9584d3c2c0f734fb#npm:2.0.0-nightly.963"],
             ["@swc/cli", "virtual:425a3b9bf55fe09f5cb87920eac8dbe977a178e838ed97831620d1b50671b58e73ba1dac5ce9f79cb038c4346b57283d8ab29fa5ef18688f9584d3c2c0f734fb#npm:0.1.55"],
@@ -463,6 +464,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["@jvanderen1/unstated-next", "workspace:."],
+            ["@parcel/core", "npm:2.0.0-nightly.961"],
             ["@parcel/packager-ts", "npm:2.0.0-nightly.963"],
             ["@parcel/transformer-typescript-types", "virtual:425a3b9bf55fe09f5cb87920eac8dbe977a178e838ed97831620d1b50671b58e73ba1dac5ce9f79cb038c4346b57283d8ab29fa5ef18688f9584d3c2c0f734fb#npm:2.0.0-nightly.963"],
             ["@swc/cli", "virtual:425a3b9bf55fe09f5cb87920eac8dbe977a178e838ed97831620d1b50671b58e73ba1dac5ce9f79cb038c4346b57283d8ab29fa5ef18688f9584d3c2c0f734fb#npm:0.1.55"],
