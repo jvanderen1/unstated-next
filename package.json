@@ -26,7 +26,7 @@
     "dist/"
   ],
   "scripts": {
-    "build": "parcel build",
+    "build": "parcel build --no-source-maps",
     "clean": "npm run clean:dist && npm run clean:types && npm run clean:node-modules",
     "clean-install": "npm run clean && yarn install",
     "clean:dist": "rimraf dist/",
