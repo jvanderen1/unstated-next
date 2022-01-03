@@ -21,8 +21,6 @@ jobs:
       - uses: borales/actions-yarn@v2.3.0
         with:
           cmd: build
-      - name: Enable Husky
-        run: chmod +x ./.husky
       - name: Publish Package
         run: npm publish --access public
         env:
