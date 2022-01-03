@@ -22,10 +22,12 @@ jobs:
         with:
           cmd: build
       - name: Move package.json
-        run: |
-          chmod 777 ./dist/
-          cp ./package.json ./dist/package.json
-          cd ./dist/
+        uses: canastro/copy-file-action@master
+        with:
+          source: "./package.json"
+          target: "./dist/package.json"
+      - name: Change into dist/
+        run: cd ./dist/
       - name: Publish Package
         run: npm publish --access public
         env:
