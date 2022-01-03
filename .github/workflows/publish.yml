@@ -21,14 +21,7 @@ jobs:
       - uses: borales/actions-yarn@v2.3.0
         with:
           cmd: build
-      - name: Move package.json
-        uses: canastro/copy-file-action@master
-        with:
-          source: "./package.json"
-          target: "./dist/package.json"
       - name: Publish Package
-        run: |
-          cd ./dist/
-          npm publish --access public
+        run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
