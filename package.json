@@ -30,6 +30,7 @@
     "clean:node-modules": "rimraf node_modules/",
     "clean:types": "tsc --build --clean",
     "dev": "parcel example/index.html",
+    "dev:open": "npm run dev -- --open",
     "lint": "eslint \"**/*.{ts,tsx}\"",
     "lint:fix": "npm run lint -- --fix",
     "prepare": "husky install",
@@ -65,6 +66,7 @@
     "prop-types": ">= 15.5.0",
     "react": ">= 16.8.0"
   },
+  "packageManager": "yarn@3.1.1",
   "volta": {
     "node": "16.13.1",
     "yarn": "1.22.17"
