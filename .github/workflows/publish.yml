@@ -26,9 +26,9 @@ jobs:
         with:
           source: "./package.json"
           target: "./dist/package.json"
-      - name: Change into dist/
-        run: cd ./dist/
       - name: Publish Package
-        run: npm publish --access public
+        run: |
+          cd ./dist/
+          npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
