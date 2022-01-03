@@ -1,6 +1,6 @@
 {
-  "include": ["src/**/*.ts", "src/**/*.tsx", "example/**/*.ts", "example/**/*.tsx"],
-  "exclude": ["node_modules"],
+  "include": ["./src/**/*.ts", "./src/**/*.tsx", "./example/**/*.ts", "./example/**/*.tsx"],
+  "exclude": ["./node_modules/"],
   "compilerOptions": {
     /* Basic ContainerOptions */
     "target": "ES2020",                       // Specify ECMAScript target version.
