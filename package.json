@@ -25,7 +25,7 @@
   "scripts": {
     "build": "parcel build",
     "clean": "npm run clean:dist && npm run clean:types && npm run clean:node-modules",
-    "clean-install": "npm run clean && npm install",
+    "clean-install": "npm run clean && yarn install",
     "clean:dist": "rimraf dist/",
     "clean:node-modules": "rimraf node_modules/",
     "clean:types": "tsc --build --clean",
