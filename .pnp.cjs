@@ -50,7 +50,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:8.6.0"],
             ["eslint-plugin-react", "virtual:425a3b9bf55fe09f5cb87920eac8dbe977a178e838ed97831620d1b50671b58e73ba1dac5ce9f79cb038c4346b57283d8ab29fa5ef18688f9584d3c2c0f734fb#npm:7.28.0"],
             ["eslint-plugin-react-hooks", "virtual:425a3b9bf55fe09f5cb87920eac8dbe977a178e838ed97831620d1b50671b58e73ba1dac5ce9f79cb038c4346b57283d8ab29fa5ef18688f9584d3c2c0f734fb#npm:4.3.0"],
-            ["husky", "npm:7.0.4"],
             ["lint-staged", "npm:12.1.5"],
             ["parcel", "npm:2.0.0-nightly.961"],
             ["prettier", "npm:2.5.1"],
@@ -479,7 +478,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:8.6.0"],
             ["eslint-plugin-react", "virtual:425a3b9bf55fe09f5cb87920eac8dbe977a178e838ed97831620d1b50671b58e73ba1dac5ce9f79cb038c4346b57283d8ab29fa5ef18688f9584d3c2c0f734fb#npm:7.28.0"],
             ["eslint-plugin-react-hooks", "virtual:425a3b9bf55fe09f5cb87920eac8dbe977a178e838ed97831620d1b50671b58e73ba1dac5ce9f79cb038c4346b57283d8ab29fa5ef18688f9584d3c2c0f734fb#npm:4.3.0"],
-            ["husky", "npm:7.0.4"],
             ["lint-staged", "npm:12.1.5"],
             ["parcel", "npm:2.0.0-nightly.961"],
             ["prettier", "npm:2.5.1"],
@@ -5136,15 +5134,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["humanize-ms", "npm:1.2.1"],
             ["ms", "npm:2.1.3"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["husky", [
-        ["npm:7.0.4", {
-          "packageLocation": "./.yarn/cache/husky-npm-7.0.4-917ba035c6-c6ec4af63d.zip/node_modules/husky/",
-          "packageDependencies": [
-            ["husky", "npm:7.0.4"]
           ],
           "linkType": "HARD",
         }]
