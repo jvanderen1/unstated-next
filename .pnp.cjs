@@ -744,7 +744,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["dotenv", "npm:7.0.0"],
             ["dotenv-expand", "npm:5.1.0"],
             ["json-source-map", "npm:0.6.1"],
-            ["json5", "npm:1.0.1"],
+            ["json5", "npm:1.0.2"],
             ["micromatch", "npm:4.0.4"],
             ["msgpackr", "npm:1.5.2"],
             ["nullthrows", "npm:1.1.1"],
@@ -1533,7 +1533,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["fastest-levenshtein", "npm:1.0.12"],
             ["is-glob", "npm:4.0.3"],
             ["is-url", "npm:1.2.4"],
-            ["json5", "npm:1.0.1"],
+            ["json5", "npm:1.0.2"],
             ["lru-cache", "npm:6.0.0"],
             ["micromatch", "npm:4.0.4"],
             ["node-forge", "npm:0.10.0"],
@@ -5792,10 +5792,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["json5", [
-        ["npm:1.0.1", {
-          "packageLocation": "./.yarn/cache/json5-npm-1.0.1-647fc8794b-e76ea23dbb.zip/node_modules/json5/",
+        ["npm:1.0.2", {
+          "packageLocation": "./.yarn/cache/json5-npm-1.0.2-9607f93e30-866458a8c5.zip/node_modules/json5/",
           "packageDependencies": [
-            ["json5", "npm:1.0.1"],
+            ["json5", "npm:1.0.2"],
             ["minimist", "npm:1.2.5"]
           ],
           "linkType": "HARD",
@@ -5945,7 +5945,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["loader-utils", "npm:1.4.0"],
             ["big.js", "npm:5.2.2"],
             ["emojis-list", "npm:3.0.0"],
-            ["json5", "npm:1.0.1"]
+            ["json5", "npm:1.0.2"]
           ],
           "linkType": "HARD",
         }]
